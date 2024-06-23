@@ -1,4 +1,19 @@
-.grid{
+/* articleの設定 */
+.article-grid {
   display: flex;
   justify-content: center;
 }
+
+.article-name{
+  text-align: center;
+}
+.article-button{
+  text-align: center;
+}
+
+/* mainの設定 */
+.main {
+  display: flex;
+  justify-content: center;
+}
+
