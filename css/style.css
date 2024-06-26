@@ -1,3 +1,15 @@
+#loading {
+  background-color: lightblue;
+  position:fixed;
+  inset:0;
+}
+
+/* headerの設定 */
+.page-title{
+  text-align: center;
+}
+
+
 /* articleの設定 */
 .article-grid {
   display: flex;
