@@ -1,11 +1,26 @@
-#loading {
-  background-color: lightblue;
-  position:fixed;
-  inset:0;
+/* ローディングの設定 */
+#loading-left,
+#loading-right {
+  background-color: green;
+  position: fixed;
+  width: 50vw;
+  height: 100vh;
 }
 
+#loading-left {
+  left: 0;
+  transform-origin: left top;
+
+}
+
+#loading-right {
+  right: 0;
+  transform-origin: right top;
+}
+
+
 /* headerの設定 */
-.page-title{
+.page-title {
   text-align: center;
 }
 
@@ -16,10 +31,11 @@
   justify-content: center;
 }
 
-.article-name{
+.article-name {
   text-align: center;
 }
-.article-button{
+
+.article-button {
   text-align: center;
 }
 
@@ -28,4 +44,3 @@
   display: flex;
   justify-content: center;
 }
-
