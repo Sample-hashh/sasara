@@ -44,3 +44,8 @@
   display: flex;
   justify-content: center;
 }
+
+/* ボタンの設定 */
+button{
+  background-color:green;
+}
