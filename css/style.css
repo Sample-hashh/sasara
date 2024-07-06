@@ -1,29 +1,16 @@
 /* ローディングの設定 */
-#loading-left,
-#loading-right {
-  background-color: green;
+.loading {
+  background-image: url(../images/topgamen.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:100vh;
+  inset: 0;
   position: fixed;
-  width: 50vw;
-  height: 100vh;
 }
-
-#loading-left {
-  left: 0;
-  transform-origin: left top;
-
-}
-
-#loading-right {
-  right: 0;
-  transform-origin: right top;
-}
-
-
 /* headerの設定 */
 .page-title {
   text-align: center;
 }
-
 
 /* articleの設定 */
 .article-grid {
@@ -46,6 +33,49 @@
 }
 
 /* ボタンの設定 */
-button{
-  background-color:green;
+button {
+  background-color: green;
 }
+/* ヘッダーの設定 */
+.page-header{
+  width: auto;
+  height: 10rem;
+  background-color: #fae212;
+}
+/* mainの設定 */
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+/* articleの設定 */
+.message{
+  text-align: center;
+  
+}
+.article-grid{
+  width:85%;
+  margin: 1rem;
+  background-color: #F1FCFF;
+  border:1px  solid blue;
+}
+.article-main{
+  display: grid;
+  gap:2rem 1.5rem;
+  grid-template-columns: repeat(3,1fr);
+
+}
+.article-item{
+  margin: 10px;
+}
+/* asideの設定 */
+.aside{
+  width:15%;
+  margin:1rem;
+}
+
+/* youtube画像の設定 */
+.article-iframe{
+  width:30rem;
+}
+
+
