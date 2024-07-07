@@ -24,11 +24,11 @@ const toshi_url = {
 }
 // 通し動画 正面/ななめのurlオブジェクト
 const change = (btn, iframe, fraont_url, diagonal_url) => {
-  if (btn.textContent === '正面') {
-    btn.textContent = 'ななめ';
+  if (btn.textContent === 'ななめver') {
+    btn.textContent = '正面ver';
     iframe.src = diagonal_url;
   } else {
-    btn.textContent = '正面';
+    btn.textContent = 'ななめver';
     iframe.src = fraont_url;
   }
 }
