@@ -73,9 +73,24 @@
 .aside {
   width: 15%;
   margin: 1rem;
+  background-color: #fff9f9;
+  border: 1px solid red;
+}
+.aside-h2 {
+  color: red;
+}
+.book {
+  margin-bottom: 0;
+}
+.book img {
+  width: 3rem;
+  height: 3rem;
+}
+li{
+  list-style:none
 }
 
 /* youtube画像の設定 */
 .article-iframe {
-  width: 30rem;
+  width: 20rem;
 }
