@@ -25,6 +25,9 @@
   height: 3rem;
   border-radius: 30px;
 }
+.btn:hover{
+  opacity: 0.7;
+}
 /* ヘッダーの設定 */
 .page-header {
   width: auto;
