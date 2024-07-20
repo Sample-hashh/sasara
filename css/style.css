@@ -7,7 +7,7 @@
   inset: 0;
   position: fixed;
 }
-/* headerの設定 */
+/* ヘッダーの設定 */
 .page-header {
   width: auto;
   height: 10rem;
@@ -15,11 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-/* ヘッダーの設定 */
-
-
 /* mainの設定 */
 .main {
   display: flex;
@@ -105,7 +101,51 @@ li{
   height: 10rem;
 }
 
+@media (max-width:480px){
 
+  /* ヘッダーの設定 */
+  .page-header {
+    width: auto;
+    height: 5rem;
+    background-color: #fae212;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  /* articleの設定 */
+  .article-grid{
+    width: auto;
+    margin: 0;
+  }
+  .article-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .message {
+    text-align: center;
+    font-size: 10px;
+  }
+  .article-item{
+    justify-content: none;
+    margin:auto;
+    padding: 0;
+
+  }
+  /* youtube画像の設定 */
+.article-iframe {
+  width: 15rem;
+  height: 10rem;
+}
+.aside{
+
+}
+
+
+
+}
 
 
 
