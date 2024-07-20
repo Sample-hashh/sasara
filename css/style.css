@@ -29,8 +29,11 @@
   height: 3rem;
   border-radius: 30px;
 }
-.btn:hover {
-  opacity: 0.7;
+/* パソコンで閲覧時のみ、hoverする */
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    opacity: 0.7;
+  }
 }
 
 /* mainの設定 */
@@ -139,11 +142,5 @@ li {
   .aside {
     width: auto;
     margin: 0;
-  }
-  @media (hover:none){
-    .btn:active{
-      opacity: 0.7;
-    }
-
   }
 }
