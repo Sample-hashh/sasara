@@ -1,6 +1,6 @@
 /* ローディングの設定 */
 .loading {
-  background-image: url(../images/topgamen.jpg);
+  background-image: url(../images/loadPc.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -105,6 +105,15 @@ li {
 }
 
 @media (max-width: 480px) {
+  /* ローディングの設定 */
+  .loading {
+    background-image: url(../images/loadMobail.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    inset: 0;
+    position: fixed;
+  }
   /* ヘッダーの設定 */
   .page-header {
     width: auto;
@@ -127,7 +136,7 @@ li {
   }
   .message {
     text-align: center;
-    font-size: 10px;
+    font-size: 13px;
   }
   .article-item {
     justify-content: none;
