@@ -7,15 +7,7 @@
   inset: 0;
   position: fixed;
 }
-/* ヘッダーの設定 */
-.page-header {
-  width: auto;
-  height: 10rem;
-  background-color: #fae212;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 /* mainの設定 */
 .main {
   display: flex;
@@ -34,11 +26,10 @@
 }
 /* パソコンで閲覧時のみ、hoverする */
 @media (hover: hover) and (pointer: fine) {
-  .article-btn:hover {
+  .btn:hover {
     opacity: 0.7;
   }
 }
-
 /* mainの設定 */
 .main {
   display: flex;
