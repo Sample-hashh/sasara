@@ -24,14 +24,17 @@
 
 /* ボタンの設定 */
 .btn {
-  background-color: #09c5ee;
   width: 10rem;
   height: 3rem;
   border-radius: 30px;
+  color: white;
+}
+.article-btn {
+  background-color: #09c5ee;
 }
 /* パソコンで閲覧時のみ、hoverする */
 @media (hover: hover) and (pointer: fine) {
-  .btn:hover {
+  .article-btn:hover {
     opacity: 0.7;
   }
 }
@@ -96,6 +99,14 @@
 }
 li {
   list-style: none;
+}
+/* ボタンの設定 */
+.aside-button {
+}
+.aside-btn {
+  display: block;
+  background-color: #ff0000;
+  margin: 1rem auto;
 }
 
 /* youtube画像の設定 */
