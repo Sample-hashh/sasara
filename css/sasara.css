@@ -19,6 +19,14 @@
     height: 7rem;
     font-size: 1.2rem;
   }
+  .midashi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .midashi-item{
+    margin: 1rem;
+  }
   @media (max-width: 480px){
     .sasara-main{
         display: flex;

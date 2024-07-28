@@ -1,0 +1,14 @@
+.shousai{
+  display: flex;
+}
+.text{
+  width: 70%;
+}
+.shishi{
+  width: 30%;
+}
+.shishi-item{
+  object-fit: cover;
+  width: 8rem;
+  height: 8rem;
+}

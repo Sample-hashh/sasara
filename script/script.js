@@ -50,3 +50,8 @@ const iframe3 = document.querySelector('.iframe3');
 btn3.addEventListener('click', () => {
   change(btn3, iframe3,toshi_url.hiraniwa_fraont,toshi_url.hiraniwa_diagonal);
 });
+
+
+
+
+
