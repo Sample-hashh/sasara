@@ -24,12 +24,7 @@
 .article-btn {
   background-color: #09c5ee;
 }
-/* パソコンで閲覧時のみ、hoverする */
-@media (hover: hover) and (pointer: fine) {
-  .btn:hover {
-    opacity: 0.7;
-  }
-}
+
 /* mainの設定 */
 .main {
   display: flex;
@@ -117,11 +112,6 @@ li {
     position: fixed;
   }
   /* ヘッダーの設定 */
-  .page-header {
-    width: auto;
-    height: 5rem;
-    background-color: #fae212;
-  }
   .main {
     display: flex;
     flex-direction: column;
