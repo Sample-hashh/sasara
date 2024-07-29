@@ -1,14 +1,21 @@
-.shousai{
+.shousai {
   display: flex;
+  margin-bottom: 3rem;
 }
-.text{
+.text {
   width: 70%;
 }
-.shishi{
+.text-item {
+  margin: 1rem 5rem;
+}
+.image {
   width: 30%;
 }
-.shishi-item{
+.image-item {
   object-fit: cover;
   width: 8rem;
   height: 8rem;
+}
+main {
+  font-size: 23px;
 }
