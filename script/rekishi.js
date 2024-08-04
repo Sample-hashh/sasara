@@ -21,7 +21,7 @@ const slideRight = (entries) =>{
   entries.forEach((entry) =>{
     entry.target.animate(
       {
-        translate:['-5vw 0','10vw 0'],
+        translate:['0 0','20vw 0'],
       },
       {
         duration:2000,
