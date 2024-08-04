@@ -19,3 +19,9 @@
 main {
   font-size: 24px;
 }
+@media (max-width: 1600px) {
+  main {
+    font-size: 20px;
+    line-height: 3rem;
+  }
+}
