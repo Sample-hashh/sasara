@@ -1,19 +1,45 @@
 //女沼のささらとは_歴史_画像
-const shishi1 = document.querySelector('.shishi1');
-console.log(shishi1);
-const slideImg = (entries) =>{
-  console.log(entries[0].target);
-  entries[0].target.animate(
-    {
-      translate:['50vh 0','0 0'],
-    },
-    {
-      duration:2000,
-      easing:'ease',
-      fill:'forwards'
-    }
-  )
 
+const imageItems= document.querySelectorAll('.image-item');
+// 左からスライドする関数
+const slideLeft = (entries) =>{
+  entries.forEach((entry) =>{
+    entry.target.animate(
+      {
+        translate:['20vw 0','0 0'],
+      },
+      {
+        duration:2000,
+        easing:'ease',
+        fill:'forwards'
+      }
+    )
+  })
 }
-const imgObserver = new IntersectionObserver(slideImg);
-imgObserver.observe(shishi1);
+// 右からスライドする関数
+const slideRight = (entries) =>{
+  entries.forEach((entry) =>{
+    entry.target.animate(
+      {
+        translate:['-5vw 0','10vw 0'],
+      },
+      {
+        duration:2000,
+        easing:'ease',
+        fill:'forwards'
+      }
+    )
+  })
+}
+
+const slideLeftObserver = new IntersectionObserver(slideLeft);
+const slideRightObserver = new IntersectionObserver(slideRight);
+// data属性の値によってスライド方向を設定する
+imageItems.forEach((item) =>{
+  if(item.dataset.move === 'slideLeft'){
+    slideLeftObserver.observe(item);
+  } else {
+    slideRightObserver.observe(item);
+  }
+})
+

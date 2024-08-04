@@ -1,15 +1,15 @@
 .shousai {
   display: flex;
-  margin-bottom: 3rem;
+  margin: 5rem;
 }
 .text {
-  width: 70%;
+  width: 50%;
 }
 .text-item {
   margin: 1rem 5rem;
 }
 .image {
-  width: 30%;
+  width: 50%;
 }
 .image-item {
   object-fit: cover;
@@ -17,5 +17,5 @@
   height: 8rem;
 }
 main {
-  font-size: 23px;
+  font-size: 24px;
 }
