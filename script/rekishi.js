@@ -4,33 +4,61 @@ const imageItems = document.querySelectorAll(".image-item");
 // 左からスライドする関数
 const slideLeft = (entries) => {
   entries.forEach((entry) => {
-    entry.target.animate(
-      {
-        translate: ["20vw 0", "0 0"],
-        opacity: [0, 1],
-      },
-      {
-        duration: 2000,
-        easing: "ease",
-        fill: "forwards",
-      }
-    );
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      entry.target.animate(
+        {
+          translate: ["100vw 0", "30vw 0"],
+          opacity: [0, 1],
+        },
+        {
+          duration: 2000,
+          easing: "ease",
+          fill: "forwards",
+        }
+      );
+    } else {
+      entry.target.animate(
+        {
+          translate: ["20vw 0", "0 0"],
+          opacity: [0, 1],
+        },
+        {
+          duration: 2000,
+          easing: "ease",
+          fill: "forwards",
+        }
+      );
+    }
   });
 };
 // 右からスライドする関数
 const slideRight = (entries) => {
   entries.forEach((entry) => {
-    entry.target.animate(
-      {
-        translate: ["0 0", "20vw 0"],
-        opacity: [0, 1],
-      },
-      {
-        duration: 2000,
-        easing: "ease",
-        fill: "forwards",
-      }
-    );
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      entry.target.animate(
+        {
+          translate: ["0 0", "30vw 0"],
+          opacity: [0, 1],
+        },
+        {
+          duration: 2000,
+          easing: "ease",
+          fill: "forwards",
+        }
+      );
+    } else {
+      entry.target.animate(
+        {
+          translate: ["0 0", "20vw 0"],
+          opacity: [0, 1],
+        },
+        {
+          duration: 2000,
+          easing: "ease",
+          fill: "forwards",
+        }
+      );
+    }
   });
 };
 
@@ -44,3 +72,9 @@ imageItems.forEach((item) => {
     slideRightObserver.observe(item);
   }
 });
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  // ウィンドウサイズ768px以下のときの処理
+} else {
+  // それ以外の処理
+}
