@@ -2,62 +2,77 @@
 
 const imageItems = document.querySelectorAll(".image-item");
 // 左からスライドする関数
-const slideLeft = (entries) => {
+const slideLeft = (entries, obs) => {
   entries.forEach((entry) => {
     if (window.matchMedia("(max-width: 768px)").matches) {
-      entry.target.animate(
-        {
-          translate: ["100vw 0", "30vw 0"],
-          opacity: [0, 1],
-        },
-        {
-          duration: 2000,
-          easing: "ease",
-          fill: "forwards",
-        }
-      );
+      if (entry.isIntersecting) {
+        entry.target.animate(
+          {
+            translate: ["100vw 0", "30vw 0"],
+            opacity: [0, 1],
+          },
+          {
+            duration: 2000,
+            easing: "ease",
+            fill: "forwards",
+          }
+        );
+        obs.unobserve(entry.target);
+      }
     } else {
-      entry.target.animate(
-        {
-          translate: ["20vw 0", "0 0"],
-          opacity: [0, 1],
-        },
-        {
-          duration: 2000,
-          easing: "ease",
-          fill: "forwards",
-        }
-      );
+      if (entry.isIntersecting) {
+        entry.target.animate(
+          {
+            translate: ["20vw 0", "0 0"],
+            opacity: [0, 1],
+          },
+          {
+            duration: 2000,
+            easing: "ease",
+            fill: "forwards",
+          }
+        );
+        obs.unobserve(entry.target);
+      }
     }
   });
 };
+315;
 // 右からスライドする関数
-const slideRight = (entries) => {
+const slideRight = (entries, obs) => {
   entries.forEach((entry) => {
     if (window.matchMedia("(max-width: 768px)").matches) {
-      entry.target.animate(
-        {
-          translate: ["0 0", "30vw 0"],
-          opacity: [0, 1],
-        },
-        {
-          duration: 2000,
-          easing: "ease",
-          fill: "forwards",
-        }
-      );
+      if (entry.isIntersecting) {
+        entry.target.animate(
+          {
+            translate: ["0 0", "30vw 0"],
+            opacity: [0, 1],
+          },
+          {
+            duration: 2000,
+            easing: "ease",
+            fill: "forwards",
+            delay: 2000,
+          }
+        );
+        obs.unobserve(entry.target);
+      }
     } else {
-      entry.target.animate(
-        {
-          translate: ["0 0", "20vw 0"],
-          opacity: [0, 1],
-        },
-        {
-          duration: 2000,
-          easing: "ease",
-          fill: "forwards",
-        }
-      );
+      if (entry.isIntersecting) {
+        entry.target.animate(
+          {
+            translate: ["0 0", "20vw 0"],
+            opacity: [0, 1],
+          },
+          {
+            duration: 2000,
+            easing: "ease",
+            fill: "forwards",
+            delay: 1800,
+          }
+        );
+        obs.unobserve(entry.target);
+      }
     }
   });
 };
