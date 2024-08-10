@@ -52,7 +52,6 @@ const slideRight = (entries, obs) => {
             duration: 2000,
             easing: "ease",
             fill: "forwards",
-            delay: 2000,
           }
         );
         obs.unobserve(entry.target);
