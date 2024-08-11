@@ -27,7 +27,6 @@
 .midashi-item {
   margin: 1rem;
 }
-/* 以下遷移画面の設定 */
 .shousai {
   display: flex;
   margin-left: 5rem;
@@ -45,12 +44,18 @@
 }
 .image {
   width: 50%;
+  text-align: center;
 }
-.image-item {
+/* 歴史画面の画像設定 */
+.shishi-item {
   object-fit: cover;
   width: 8rem;
   height: 8rem;
-  opacity: 0;
+}
+/* イベント画面の画像設定 */
+.ibent-item{
+  width: 40vw;
+  background-size: contain;
 }
 main {
   font-size: 24px;
@@ -70,7 +75,6 @@ main {
   .sasara-btn {
     margin: 1rem 0;
   }
-  /* スマホ版_以下遷移画面の設定 */
   .shousai {
     display: block;
     margin: 1rem;
@@ -84,9 +88,16 @@ main {
   .image {
     width: 100%;
   }
-  .image-item {
+  /* 歴史画面の画像設定 */
+  .shishi-item {
     object-fit: cover;
     width: 8rem;
     height: 8rem;
+    opacity: 0;
   }
+  .ibent-item{
+    width: 80vw;
+    margin: auto;
+  }
+
 }

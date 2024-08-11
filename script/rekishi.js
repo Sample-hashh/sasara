@@ -8,22 +8,7 @@ const slideLeft = (entries, obs) => {
       if (entry.isIntersecting) {
         entry.target.animate(
           {
-            translate: ["100vw 0", "30vw 0"],
-            opacity: [0, 1],
-          },
-          {
-            duration: 2000,
-            easing: "ease",
-            fill: "forwards",
-          }
-        );
-        obs.unobserve(entry.target);
-      }
-    } else {
-      if (entry.isIntersecting) {
-        entry.target.animate(
-          {
-            translate: ["20vw 0", "0 0"],
+            translate: ["100vw 0", "0 0"],
             opacity: [0, 1],
           },
           {
@@ -45,7 +30,7 @@ const slideRight = (entries, obs) => {
       if (entry.isIntersecting) {
         entry.target.animate(
           {
-            translate: ["0 0", "30vw 0"],
+            translate: ["-50vw 0", "0 0"],
             opacity: [0, 1],
           },
           {
@@ -56,23 +41,7 @@ const slideRight = (entries, obs) => {
         );
         obs.unobserve(entry.target);
       }
-    } else {
-      if (entry.isIntersecting) {
-        entry.target.animate(
-          {
-            translate: ["0 0", "20vw 0"],
-            opacity: [0, 1],
-          },
-          {
-            duration: 2000,
-            easing: "ease",
-            fill: "forwards",
-            delay: 1800,
-          }
-        );
-        obs.unobserve(entry.target);
-      }
-    }
+    } 
   });
 };
 
