@@ -2,6 +2,7 @@
 const ibentItem = document.querySelectorAll(".ibent-item");
 //監視対象に入ったら、表示する関数
 const ibentObserve = (entries, obs) => {
+  console.log(entries);
   entries.forEach((entry) => {
     if (window.matchMedia("(max-width: 768px)").matches) {
       console.log(entry);

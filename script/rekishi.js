@@ -58,9 +58,3 @@ imageItems.forEach((item) => {
     slideRightObserver.observe(item);
   }
 });
-
-if (window.matchMedia("(max-width: 768px)").matches) {
-  // ウィンドウサイズ768px以下のときの処理
-} else {
-  // それ以外の処理
-}
