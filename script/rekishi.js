@@ -1,10 +1,12 @@
 //女沼のささらとは_歴史_画像
 
-const imageItems = document.querySelectorAll(".image-item");
+const imageItems = document.querySelectorAll(".shishi-item");
+
 // 左からスライドする関数
 const slideLeft = (entries, obs) => {
   entries.forEach((entry) => {
     if (window.matchMedia("(max-width: 768px)").matches) {
+      console.log(entry);
       if (entry.isIntersecting) {
         entry.target.animate(
           {
@@ -27,6 +29,7 @@ const slideLeft = (entries, obs) => {
 const slideRight = (entries, obs) => {
   entries.forEach((entry) => {
     if (window.matchMedia("(max-width: 768px)").matches) {
+      console.log(entry);
       if (entry.isIntersecting) {
         entry.target.animate(
           {
@@ -41,7 +44,7 @@ const slideRight = (entries, obs) => {
         );
         obs.unobserve(entry.target);
       }
-    } 
+    }
   });
 };
 

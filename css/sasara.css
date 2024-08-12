@@ -19,14 +19,6 @@
   height: 7rem;
   font-size: 1.2rem;
 }
-.midashi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.midashi-item {
-  margin: 1rem;
-}
 .shousai {
   display: flex;
   margin-left: 5rem;
@@ -53,7 +45,7 @@
   height: 8rem;
 }
 /* イベント画面の画像設定 */
-.ibent-item{
+.ibent-item {
   width: 40vw;
   background-size: contain;
 }
@@ -93,11 +85,13 @@ main {
     object-fit: cover;
     width: 8rem;
     height: 8rem;
-    opacity: 0;
   }
-  .ibent-item{
+  .ibent-item {
     width: 80vw;
     margin: auto;
   }
-
+  /* イベント画面の画像設定 */
+  .ibent-item {
+    opacity: 0;
+  }
 }
