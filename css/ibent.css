@@ -1,10 +1,10 @@
-.rekishi-shousai {
+.ibent-shousai {
   display: flex;
   margin-left: 5rem;
   margin-right: 5rem;
   margin-bottom: 5rem;
 }
-.rekishi-shousai1 {
+.ibent-shousai1 {
   margin-top: 5rem;
 }
 .text {
@@ -17,7 +17,7 @@
   width: 50%;
   text-align: center;
 }
-.rekishi-item {
+.image-item {
   object-fit: cover;
   width: 8rem;
   height: 8rem;
@@ -26,15 +26,19 @@
 main {
   font-size: 24px;
 }
-.rekishi-shousai2 {
+.ibent-shousai2 {
   display: flex;
   flex-direction: row-reverse;
+}
+.ibent-item {
+  width: 40vw;
+  background-size: contain;
 }
 
 
 @media (max-width: 480px) {
   /* スマホ版_以下遷移画面の設定 */
-  .rekishi-shousai {
+  .ibent-shousai {
     display: block;
     margin: 1rem;
   }
@@ -47,10 +51,19 @@ main {
   .image {
     width: 100%;
   }
-  .rekishi-item {
+  .image-item {
     object-fit: cover;
     width: 8rem;
     height: 8rem;
     opacity: 0;
   }
+  .ibent-item {
+    width: 80vw;
+    margin: auto;
+  }
+  /* イベント画面の画像設定 */
+  .ibent-item {
+    opacity: 0;
+  }
+
 }

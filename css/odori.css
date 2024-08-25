@@ -1,13 +1,13 @@
-.kihon-midashi{
+.odori-midashi{
   margin:3rem
 }
 
-.kihon-button-waku{
+.odori-button-waku{
   display: flex;
   justify-content: space-around;
 }
 
-.kihon-botton{
+.odori-botton{
   width: 10rem;
   height: 5rem;
   background-color:#fae212;

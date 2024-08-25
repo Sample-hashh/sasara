@@ -1,8 +1,17 @@
 /* ヘッダーの設定 */
-.kyoutu-header {
+.kyoutu-header1 {
   width: 100%;
   height: 10rem;
   background-color: #fae212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ヘッダー下のヘッダー設定 */
+.kyoutu-header2 {
+  background-color: #efb782;
+  width: 100%;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
