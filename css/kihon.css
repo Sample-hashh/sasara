@@ -1,0 +1,15 @@
+.kihon-midashi{
+  margin:3rem
+}
+
+.kihon-button-waku{
+  display: flex;
+  justify-content: space-around;
+}
+
+.kihon-botton{
+  width: 10rem;
+  height: 5rem;
+  background-color:#fae212;
+  color: black;
+}
