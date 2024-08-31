@@ -1,0 +1,33 @@
+.shousai-title{
+  text-align: center;
+}
+.shousai-midashi{
+  text-align: center;
+}
+.shousai-mikurabe{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.shousai-good-tab,.shousai-bad-tab{
+  text-align: center;
+  color:white
+}
+.shousai-good-tab{
+  background-color: blue;
+}
+.shousai-bad-tab{
+  background-color: red;
+}
+.shousai-point-title,.shousai-point-article{
+  text-align: center;
+}
+.shousai-point-title{
+  
+  font-weight: bold;
+}
+.shousai-point{
+  border-style: solid;
+  width:fit-content;
+  margin: auto;
+}
