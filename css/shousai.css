@@ -1,8 +1,18 @@
 .shousai-title{
   text-align: center;
+  margin:auto;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+  border-bottom: 5px solid #fae212;
+  width:fit-content;
+
+
 }
 .shousai-midashi{
   text-align: center;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+
 }
 .shousai-mikurabe{
   display: flex;
@@ -27,7 +37,25 @@
   font-weight: bold;
 }
 .shousai-point{
-  border-style: solid;
-  width:fit-content;
   margin: auto;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+  border-style: solid;
+  width:fit-content; 
+}
+.shousai-iframe{
+  width:560px;
+  height:315px;
+}
+
+@media (max-width: 480px){
+  .shousai-mikurabe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .shousai-iframe{
+    width: 336px;
+    height:189px;
+  }
 }
