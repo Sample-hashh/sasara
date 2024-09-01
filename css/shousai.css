@@ -1,61 +1,58 @@
-.shousai-title{
+.shousai-title {
   text-align: center;
-  margin:auto;
-  margin-top: 2rem;
-  margin-bottom:2rem;
+  margin: auto;
+  margin-bottom: 2rem;
   border-bottom: 5px solid #fae212;
-  width:fit-content;
-
-
+  width: fit-content;
 }
-.shousai-midashi{
+.shousai-midashi {
   text-align: center;
   margin-top: 2rem;
-  margin-bottom:2rem;
-
+  margin-bottom: 2rem;
 }
-.shousai-mikurabe{
+.shousai-mikurabe {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.shousai-good-tab,.shousai-bad-tab{
+.shousai-good-tab,
+.shousai-bad-tab {
   text-align: center;
-  color:white
+  color: white;
 }
-.shousai-good-tab{
+.shousai-good-tab {
   background-color: blue;
 }
-.shousai-bad-tab{
+.shousai-bad-tab {
   background-color: red;
 }
-.shousai-point-title,.shousai-point-article{
+.shousai-point-title,
+.shousai-point-article {
   text-align: center;
 }
-.shousai-point-title{
-  
+.shousai-point-title {
   font-weight: bold;
 }
-.shousai-point{
+.shousai-point {
   margin: auto;
   margin-top: 2rem;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   border-style: solid;
-  width:fit-content; 
+  width: fit-content;
 }
-.shousai-iframe{
-  width:560px;
-  height:315px;
+.shousai-iframe {
+  width: 560px;
+  height: 315px;
 }
 
-@media (max-width: 480px){
-  .shousai-mikurabe{
+@media (max-width: 480px) {
+  .shousai-mikurabe {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .shousai-iframe{
+  .shousai-iframe {
     width: 336px;
-    height:189px;
+    height: 189px;
   }
 }

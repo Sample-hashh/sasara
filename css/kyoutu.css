@@ -29,11 +29,23 @@
     opacity: 0.7;
   }
 }
-
-body{
-  background-color: #F5F4EA;
+/* パンくずリストの設定 */
+.kyoutu-pankuzu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-@media (max-width: 480px){
+.kyoutu-pankuzu li:not(:last-of-type)::after {
+  content: ">";
+  margin: 0.3rem;
+}
+
+body {
+  background-color: #f5f4ea;
+}
+@media (max-width: 480px) {
   .page-header {
     width: auto;
     height: 5rem;
@@ -45,5 +57,8 @@ body{
     border-radius: 30px;
     color: white;
   }
-
+  /* スマホ画面の時は、パンくずリストの下に空白をいれる */
+  .kyoutu-nav {
+    margin-bottom: 1rem;
+  }
 }
