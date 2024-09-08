@@ -45,6 +45,27 @@
   height: 315px;
 }
 
+/* ポイントに下線を引く */
+.shousai-point-article{
+  background:linear-gradient(transparent 80%, #fae212 50%);
+  display: inline;
+
+  /* 背景の繰り返しを停止 */
+  background-repeat: no-repeat;
+
+  /* マーカーの横方向を0にして縮める */
+  background-size: 0% 100%;
+
+  /* マーカーが引かれる速度を指定 */
+  transition:background-size 2s ease;
+
+}
+
+/* ポイントに下線を引く jsでonにする*/
+.shousai-point-article.on{
+  background-size:100% 100%;
+}
+
 @media (max-width: 480px) {
   .shousai-mikurabe {
     display: flex;
