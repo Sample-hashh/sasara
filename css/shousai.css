@@ -57,7 +57,7 @@
   background-size: 0% 100%;
 
   /* マーカーが引かれる速度を指定 */
-  transition:background-size 2s ease;
+  transition:background-size 3.5s ease;
 
 }
 
