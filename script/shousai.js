@@ -21,7 +21,9 @@ const article = document.querySelector('.shousai-point-article');
 console.log(article);
 
 const underLine = (entries) =>{
-  entries[0].target.classList.add('on');
+  if (entries[0].isIntersecting){
+    entries[0].target.classList.add('on');
+  }
 }
 
 const articleObserver = new IntersectionObserver(underLine);
