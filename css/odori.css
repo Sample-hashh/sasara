@@ -13,3 +13,16 @@
   background-color:#fae212;
   color: black;
 }
+
+@media (max-width: 480px){
+  .odori-button-waku{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    
+  }
+
+}
+
