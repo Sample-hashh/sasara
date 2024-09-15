@@ -1,5 +1,4 @@
 //女沼のささらとは_歴史_画像
-
 const imageItems = document.querySelectorAll(".rekishi-item");
 
 // 左からスライドする関数

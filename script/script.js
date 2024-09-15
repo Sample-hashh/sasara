@@ -1,5 +1,8 @@
-// ローディングからの画面遷移
 const loading = document.querySelector('.loading');
+// ローディングからの画面遷移
+if(sessionStorage.getItem('key') !== 'sasara'){
+  sessionStorage.setItem('key','sasara');
+console.log(loading);
 window.addEventListener('load',()=>{
   loading.animate(
     {
@@ -11,8 +14,12 @@ window.addEventListener('load',()=>{
       easing:'ease',
       fill:'forwards',
     }
+    
   );
 })
+}else{
+  loading.remove(); 
+}
 /* ボタンの切り替え */
 const toshi_url = {
   doutyuu_fraont: "https://www.youtube.com/embed/1hQEgl_sfSk?si=vl3guWWwnxL6nc3i",
