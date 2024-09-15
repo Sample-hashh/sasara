@@ -40,10 +40,35 @@
   border-style: solid;
   width: fit-content;
 }
-.shousai-iframe {
+.shousai-img {
   width: 560px;
   height: 315px;
 }
+/* おどり方の基本「弓の引き方」 画像設定 */
+.shousai-img-yumi img{
+  aspect-ratio: 3/4;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.shousai-kaisetsu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.shousai-bad-yumi{
+  display:flex;
+}
+.yumi-btn{
+  margin-left:10px;
+  margin-right: 10px;
+  font-size: 5rem;
+}
+
+
+
+
 
 /* ポイントに下線を引く */
 .shousai-point-article{

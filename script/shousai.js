@@ -18,7 +18,6 @@
 
 //監視対象が範囲内に入ったときにする動作(下線を引く)
 const article = document.querySelector('.shousai-point-article');
-console.log(article);
 
 const underLine = (entries) =>{
   if (entries[0].isIntersecting){
