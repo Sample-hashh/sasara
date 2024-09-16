@@ -45,34 +45,45 @@
   height: 315px;
 }
 /* おどり方の基本「弓の引き方」 画像設定 */
-.shousai-img-yumi img{
+.shousai-img-yumi img {
   aspect-ratio: 3/4;
   width: 300px;
   height: 400px;
   object-fit: cover;
 }
-
-.shousai-kaisetsu{
+.shousai-kaisetsu {
   display: flex;
   justify-content: space-around;
 }
 
-.shousai-bad-yumi{
-  display:flex;
+.shousai-bad-yumi {
+  display: flex;
 }
-.yumi-btn{
-  margin-left:10px;
-  margin-right: 10px;
+.shousai-waku {
+  position: relative;
+}
+.prev {
+  left: -6rem;
+}
+
+.yumi-btn {
   font-size: 5rem;
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-
-
-
+.shousai-kaisetsu-good,
+.shousai-kaisetsu-bad {
+  width: 50%;
+  text-align: center;
+}
 
 /* ポイントに下線を引く */
-.shousai-point-article{
-  background:linear-gradient(transparent 70%, yellow 50%);
+.shousai-point-article {
+  background: linear-gradient(transparent 70%, yellow 50%);
   display: inline;
 
   /* 背景の繰り返しを停止 */
@@ -82,13 +93,12 @@
   background-size: 0% 100%;
 
   /* マーカーが引かれる速度を指定 */
-  transition:background-size 3.5s ease;
-
+  transition: background-size 3.5s ease;
 }
 
 /* ポイントに下線を引く jsでonにする*/
-.shousai-point-article.on{
-  background-size:100% 100%;
+.shousai-point-article.on {
+  background-size: 100% 100%;
 }
 
 @media (max-width: 480px) {
