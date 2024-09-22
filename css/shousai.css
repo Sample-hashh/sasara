@@ -79,6 +79,9 @@
 .shousai-kaisetsu-bad {
   width: 50%;
   text-align: center;
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
 }
 
 /* ポイントに下線を引く */
@@ -99,6 +102,22 @@
 /* ポイントに下線を引く jsでonにする*/
 .shousai-point-article.on {
   background-size: 100% 100%;
+}
+/* インジケーター */
+.indicator{
+  display: flex;
+  justify-content: center;
+}
+.indicator li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  list-style: none;
+  background-color: #fff;
+  border: 3px #000 solid;
+}
+.indicator li:first-of-type {
+  background-color: #000;
 }
 
 @media (max-width: 480px) {

@@ -1,6 +1,6 @@
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-const kaisetu = document.querySelector(".shousai-kaisetsu-bad");
+const kaisetu = document.querySelector(".shousai-bad-coment");
 
 let count = 0;
 // 「<がクリックされたら、画像が1つ戻る
