@@ -59,14 +59,13 @@
 .shousai-bad-yumi {
   display: flex;
 }
-.shousai-waku {
+/* <>の設定 */
+.shousai-waku-good,
+.shousai-waku-bad {
   position: relative;
 }
 .prev {
   left: -6rem;
-}
-
-.yumi-btn {
   font-size: 5rem;
   height: 6rem;
   width: 6rem;
@@ -74,6 +73,15 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.next{
+  font-size: 5rem;
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .shousai-kaisetsu-good,
 .shousai-kaisetsu-bad {
   width: 300px;
@@ -131,8 +139,22 @@
     height: 189px;
   }
 /* スマホ時、弓画面設定 */
-.yumi-btn {
-  font-size: 1rem;
+/* <>の設定 */
+.shousai-waku-good,
+.shousai-waku-bad {
+  position: relative;
+}
+.prev {
+  left: -2rem;
+  font-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next{
+  font-size: 2rem;
   height: 2rem;
   width: 2rem;
   position: absolute;
