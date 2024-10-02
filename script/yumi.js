@@ -1,7 +1,7 @@
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const kaisetu = document.querySelector(".shousai-bad-coment");
-
+const lists = document.querySelectorAll(".list");
 let count = 0;
 // 「<がクリックされたら、画像が1つ戻る
 prev.addEventListener("click", () => {
@@ -9,9 +9,9 @@ prev.addEventListener("click", () => {
   if (count < 0) {
     count = 2;
   }
-  console.log(count);
   prev_next();
   changeText(count);
+  changeColor(lists);
 });
 // 「>がクリックされたら、画像が1つ進む
 next.addEventListener("click", () => {
@@ -22,7 +22,29 @@ next.addEventListener("click", () => {
   console.log(count);
   prev_next();
   changeText(count);
+  changeColor(lists);
 });
+//インジケータの色が変わる関数
+const changeColor = (lists) =>{
+  switch(count){
+    case 0:
+      lists[0].style.backgroundColor = "#000";
+      lists[1].style.backgroundColor = "#fff";
+      lists[2].style.backgroundColor = "#fff";
+      break;
+    case 1:
+      lists[0].style.backgroundColor = "#fff";
+      lists[1].style.backgroundColor = "#000";
+      lists[2].style.backgroundColor = "#fff";
+      break;
+    case 2:
+      lists[0].style.backgroundColor = "#fff";
+      lists[1].style.backgroundColor = "#fff";
+      lists[2].style.backgroundColor = "#000";
+      break;   
+  }
+}
+
 
 const prev_next = () => {
   const img = document.querySelector(".shousai-img-yumi-bad");
