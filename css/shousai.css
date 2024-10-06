@@ -127,6 +127,17 @@
 .indicator li:first-of-type {
   background-color: #000;
 }
+/* 構え方設定 */
+.syousai-bati-img{
+  aspect-ratio: 3/4;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.shousai-bati-title,
+.shousai-bati {
+  text-align: center;
+}
 
 @media (max-width: 480px) {
   .shousai-mikurabe {
