@@ -60,8 +60,8 @@
   display: flex;
 }
 /* <>の設定 */
-.shousai-waku-good,
-.shousai-waku-bad {
+.shousai-prev-waku,
+.shousai-next-waku {
   position: relative;
 }
 .prev {
@@ -81,11 +81,12 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
+.shousai-kaisetsu-good{
+  margin-top:16px;
+}
 .shousai-kaisetsu-good,
 .shousai-kaisetsu-bad {
   width: 300px;
-
   text-align: left;
   display: flex;
   flex-flow:column;
@@ -138,6 +139,10 @@
 .shousai-bati {
   text-align: center;
 }
+.shousai-bati-waku{
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 480px) {
   .shousai-mikurabe {
@@ -149,10 +154,14 @@
     width: 336px;
     height: 189px;
   }
+  /* スマホの時は行間開けない */
+  .shousai-kaisetsu-good{
+    margin-top: 0px;
+  }
 /* スマホ時、弓画面設定 */
 /* <>の設定 */
-.shousai-waku-good,
-.shousai-waku-bad {
+.shousai-prev-waku,
+.shousai-next-waku {
   position: relative;
 }
 .prev {
