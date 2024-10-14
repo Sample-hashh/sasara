@@ -48,7 +48,7 @@ const changeColor = (lists) =>{
 
 const prev_next = () => {
   const img = document.querySelector(".shousai-img-yumi-bad");
-  const i = count % 3;
+  const i = count;
   img.src = `../images/yumi_bad${i}.jpg`;
 };
 

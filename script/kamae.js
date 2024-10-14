@@ -36,7 +36,6 @@ const changeColor = (lists) =>{
 
 const prev_next = () => {
   const img = document.querySelector(".bati_bad_img");
-  const i = count % 2;
-  console.log(i);
+  const i = count;
   img.src = `../images/kamae/bati_bad${i}.jpg`
 };
