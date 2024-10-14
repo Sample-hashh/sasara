@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/odori.css" />
   <link rel="stylesheet" href="../css/shousai.css" />
   <script src="../script/shousai.js" defer></script>
+  <script src="../script/kamae.js" defer></script>
 
   <title>ささら学習教材</title>
 </head>
@@ -47,7 +48,7 @@
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="shousai-bati-title">良いバチの持ち方</div>
         <div class="shousai-bati shousai-bati-good">
-          <img class=syousai-bati-img src="/images/kamae/bati_good.jpg" alt="">
+          <img class="syousai-bati-img" src="/images/kamae/bati_good.jpg" alt="">
         </div>
       </div>
       <div class="shousai-bad">
@@ -57,18 +58,21 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="shousai-bati-title">悪いバチの持ち方</div>
-
         <div class="shousai-bati-waku">
           <div class="shousai-prev-waku">
             <button class="prev">&lt;</button>
           </div>
           <div class="shousai-bati shousai-bati-bad">
-            <img class=syousai-bati-img src="/images/kamae/bati_bad1.jpg" alt="">
+            <img class="syousai-bati-img bati_bad_img" src="/images/kamae/bati_bad0.jpg" alt="">
           </div>
           <div class="shousai-next-waku">
             <button class="next ">&gt;</button>
-          </div>
+          </div>         
         </div>
+        <ul class="indicator" class="indicator">
+          <li class="list"></li>
+          <li class="list"></li>
+        </ul>
 
 
 
