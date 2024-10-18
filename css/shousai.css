@@ -73,7 +73,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.next{
+.next {
   font-size: 5rem;
   height: 6rem;
   width: 6rem;
@@ -81,15 +81,15 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.shousai-kaisetsu-good{
-  margin-top:16px;
+.shousai-kaisetsu-good {
+  margin-top: 16px;
 }
 .shousai-kaisetsu-good,
 .shousai-kaisetsu-bad {
   width: 300px;
   text-align: left;
   display: flex;
-  flex-flow:column;
+  flex-flow: column;
   justify-content: center;
 }
 
@@ -113,13 +113,13 @@
   background-size: 100% 100%;
 }
 /* インジケーター */
-.indicator{
+.indicator {
   display: flex;
   justify-content: center;
 }
 .indicator li {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   list-style: none;
   background-color: #fff;
@@ -129,19 +129,23 @@
   background-color: #000;
 }
 /* 構え方設定 */
-.syousai-bati-img{
+.syousai-bati-img {
   aspect-ratio: 3/4;
   width: 300px;
   height: 400px;
   object-fit: cover;
 }
 .shousai-bati-title,
-.shousai-bati {
+.shousai-bati,
+.shousai-kaisetsu-kamae {
   text-align: center;
 }
-.shousai-bati-waku{
+.shousai-bati-waku {
   display: flex;
   justify-content: center;
+}
+.shousai-kamae-good {
+  margin-top: 16px;
 }
 
 @media (max-width: 480px) {
@@ -154,33 +158,51 @@
     width: 336px;
     height: 189px;
   }
-  /* スマホの時は行間開けない */
-  .shousai-kaisetsu-good{
+  /* スマホの時は行間開けない(弓の引き方) */
+  .shousai-kaisetsu-good {
     margin-top: 0px;
   }
-/* スマホ時、弓画面設定 */
-/* <>の設定 */
-.shousai-prev-waku,
-.shousai-next-waku {
-  position: relative;
-}
-.prev {
-  left: -2rem;
-  font-size: 2rem;
-  height: 2rem;
-  width: 2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.next{
-  font-size: 2rem;
-  height: 2rem;
-  width: 2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
+  /* スマホの時は行間開けない(構え方) */
+  .shousai-kamae-good {
+    margin-top: 0x;
+  }
+  /* スマホ時、弓画面設定 */
+  /* <>の設定 */
+  .shousai-prev-waku,
+  .shousai-next-waku {
+    position: relative;
+  }
+  .prev {
+    left: -2rem;
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .next {
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .shousai-img {
+    width: 352px;
+    height: 198px;
+  }
+  .shousai-img-yumi {
+    width: 352px;
+  }
+  .shousai-good-tab,
+  .shousai-bad-tab {
+    width: 352px;
+    margin: auto;
+  }
+  .shousai-good,
+  .shousai-bad {
+    text-align: center;
+  }
 }
